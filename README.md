@@ -1,10 +1,4 @@
-Zabardast\! Aapne bilkul theek tareeqay se files upload kar li hain. Screenshot mein repo ka structure bohat clean aur professional lag raha hai (`backend`, `ui`, `main.py`, `requirements.txt` sab apni jagah par hain).
 
-Main aapke project ki details aur file structure ko samajh gaya hoon. Ek professional GitHub repository ke liye zaroori hai ke uski README mein features, tech stack, aur project ko run karne ka tareeqa clearly likha ho.
-
-Ye raha aapke **School Fee Management System** ke liye ek highly detailed aur professional `README.md` ka code. Aap isay copy kar ke apni repo ki README file mein edit/paste kar sakte hain:
-
-````markdown
 # 🏫 School Fee Management System
 
 A comprehensive, robust, and user-friendly desktop application built with Python and PyQt6. This system is designed to streamline school administrative tasks, manage student fees, track campus profitability, and ensure data safety with automated cloud backups.
@@ -88,8 +82,6 @@ To enable the automated Google Drive backup feature, you need to set up your own
 You can start the application by running the main entry script:
 
 ```bash
-python login.py
-# or 
 python main.py
 ```
 
@@ -100,16 +92,3 @@ python main.py
 Developed with a focus on system integration, clean architecture, and practical automation by **Hassan Muhammad**.
 
   * **GitHub:** [@Hassan6085](https://www.google.com/search?q=https://github.com/Hassan6085)
-
-<!-- end list -->
-
-```
-
-### Isey Update Kaise Karein?
-1. Apni repository `School-Fee-Management-System` par jayen.
-2. `README.md` file par click karein.
-3. Right side par ek chota sa **Pencil (Edit)** icon hoga, usay click karein.
-4. Ye code wahan paste kar dein aur neeche **Commit changes** par click kar dein.
-
-Aapka pehla project mukammal taur par professional look ke sath live ho gaya hai! Iske baad aap konsa project upload karna chahenge? "Next-Gen AI Video Agent" ya koi aur?
-```
