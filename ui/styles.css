@@ -1,0 +1,174 @@
+/* === MAIN WINDOW === */
+QMainWindow {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #F9FAFB, stop:1 #EEF2FF);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #1E293B;
+}
+
+/* === SIDEBAR === */
+#sidebar {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #6366F1, stop:1 #06B6D4);
+    border-right: 2px solid rgba(255,255,255,0.15);
+    min-width: 230px;
+    max-width: 260px;
+    color: white;
+}
+
+#userInfo {
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    padding: 12px;
+}
+
+/* Sidebar Buttons */
+#sidebarBtn {
+    background: transparent;
+    color: #E0F2FE;
+    font-size: 15px;
+    padding: 12px 18px;
+    text-align: left;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+#sidebarBtn:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: #FFFFFF;
+    transform: translateX(3px);
+}
+#sidebarBtn:pressed {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+}
+
+/* === TOPBAR === */
+#topbar {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #E2E8F0;
+    padding: 14px;
+}
+#appTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #334155;
+}
+#profileLbl {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* === TABS === */
+QTabWidget::pane {
+    border: 2px solid #E5E7EB;
+    background: #FAFAFF;
+    border-radius: 8px;
+}
+
+QTabBar::tab {
+    background: #CBD5E1;
+    padding: 10px 24px;
+    border-radius: 10px 10px 0 0;
+    margin-right: 3px;
+    font-size: 14px;
+    color: #334155;
+    min-width: 120px;
+}
+QTabBar::tab:selected {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #3B82F6, stop:1 #06B6D4);
+    color: white;
+    font-weight: 600;
+}
+QTabBar::tab:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #60A5FA, stop:1 #22D3EE);
+    color: white;
+}
+
+/* === INPUTS === */
+QLineEdit, QComboBox, QTextEdit {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #1E293B;
+    transition: 0.2s ease;
+}
+QLineEdit:focus, QComboBox:focus, QTextEdit:focus {
+    border: 1.5px solid #3B82F6;
+    background: #F0F9FF;
+    box-shadow: 0 0 6px rgba(59,130,246,0.3);
+}
+
+/* === TABLES === */
+QTableWidget {
+    border: 1px solid #E5E7EB;
+    gridline-color: #E5E7EB;
+    background: #FFFFFF;
+    selection-background-color: #3B82F6;
+    selection-color: #FFFFFF;
+    alternate-background-color: #F8FAFC;
+}
+QHeaderView::section {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #E0E7FF, stop:1 #C7D2FE);
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    font-weight: bold;
+    color: #1E3A8A;
+}
+
+/* === BUTTONS === */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                      stop:0 #3B82F6, stop:1 #06B6D4);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.25s ease;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                      stop:0 #2563EB, stop:1 #0EA5E9);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+QPushButton:pressed {
+    background-color: #1D4ED8;
+    transform: scale(0.98);
+}
+
+/* === SCROLLBARS === */
+QScrollBar:vertical {
+    border: none;
+    background: #E2E8F0;
+    width: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #94A3B8, stop:1 #64748B);
+    min-height: 20px;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #475569;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+    subcontrol-origin: margin;
+}
+
+/* === LABELS === */
+QLabel {
+    font-size: 14px;
+    color: #1E293B;
+}
